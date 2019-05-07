@@ -1,0 +1,89 @@
+﻿@model BusBooking.schedule
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details of Schedule</h2>
+
+<div>
+    
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.source)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.source)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.destination)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.destination)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.date)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.date)
+                </dd>
+            </dl>
+            </div>
+        </div>
+    <div class=" row">
+        <div class="col-md-4">
+            <dl>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.cost)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.cost)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.description)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.bus.bus_name)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.bus.bus_name)
+                </dd>
+</dl>
+            </div>
+        </div>
+           
+        </div>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.s_id }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>

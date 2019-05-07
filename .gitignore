@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/BusBooking/.vs/BusBooking/v15/Server/sqlite3
+/.vs
+/BusBooking/BusBooking/obj
+/BusBooking/BusBooking.Tests/obj/Debug
+/BusBooking/.vs
+/BusBooking/BusBooking/bin
+/BusBooking/BusBooking/Properties/PublishProfiles
+/BusBooking/BusBooking.Tests/obj/Release

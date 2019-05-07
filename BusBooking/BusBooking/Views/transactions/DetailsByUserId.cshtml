@@ -1,0 +1,65 @@
+﻿@model IEnumerable<BusBooking.transaction>
+@{
+    ViewBag.Title = "Details of User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>History Transactions</h2>
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.schedule.source)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.schedule.destination)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.unit_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.quantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.total_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdOn)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.schedule.source)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.schedule.destination)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.unit_price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.total_price)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.createdOn)
+        </td>
+        
+        
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.t_id })
+        </td>
+    </tr>
+    }
+
+</table>

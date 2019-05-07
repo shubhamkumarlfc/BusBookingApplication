@@ -1,0 +1,151 @@
+﻿@model BusBooking.user
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2> </h2>
+
+<div>
+    <h4>User Details</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.firstname)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.firstname)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.lastname)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.lastname)
+                </dd>
+            </dl>
+        </div>
+
+        <div class="col-md-4">
+            <dl>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.email)
+                </dd>
+            </dl>
+        </div>
+      
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.apt_number)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.apt_number)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.street_number)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.street_number)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.city)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.city)
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.state)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.state)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.country)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.country)
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.postal_Code)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.postal_Code)
+                </dd>
+            </dl>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-md-4">
+            <dl>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.role)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.role)
+                </dd>
+            </dl>
+        </div>
+      
+        <div class="col-md-4">
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.contact)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.contact)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    </div>
+        <p>
+            
+        </p>
